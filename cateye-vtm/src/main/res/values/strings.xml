@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CatEye</string>
+    <string name="the_local_map_file_exists">添加的文件资源图层已经存在地图上了</string>
+
+    <!--转移自vtm的资源-->
+    <string name="theme_default">Default</string>
+    <string name="theme_osmarender">Osmarender</string>
+    <string name="theme_osmagray">Osmagray</string>
+    <string name="theme_tubes">Tubes</string>
+    <string name="theme_newtron">NewTron</string>
+    <string name="theme_external">External theme</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="file_invalid">The selected file is invalid.</string>
+    <string name="styler_mode_line">Line</string>
+    <string name="styler_mode_area">Area</string>
+    <string name="styler_mode_outline">Outline</string>
+    <string name="styler_controls_toggle">Controls</string>
+    <string name="style_1">Show nature</string>
+    <string name="style_2">Hide nature</string>
+    <string name="menu_gridlayer">Grid</string>
+    <string name="dialog_reverse_geocoding_title">Reverse Geocoding</string>
+
+    <string name="select_local_map_file">选择本地map文件</string>
+    <string name="select_net_map_file">选择在线map文件</string>
+    <string name="select_geoJson_file">选择geoJson文件</string>
+    <string name="draw_point_line_polygon">绘制点线面</string>
+    <string name="draw_last_paint">上一笔</string>
+    <string name="draw_clear_paint">清空</string>
+    <string name="draw_finish">完成</string>
+    <string name="confirmStr">确定</string>
+    <string name="cancelStr">取消</string>
+
+    <string name="local_contour_source">选择本地线位</string>
+    <string name="draw_contour_source">手动绘制线位</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login">登陆</string>
+
+    <string name="error_info_cant_find_tap_polygon">无法获取您所点击的polygon！</string>
+    <string name="airplan_fly_set_base_altitude_tips">若单个摄区没有设置高程，则以该高程为准，起飞点高程以此为准！</string>
+</resources>
