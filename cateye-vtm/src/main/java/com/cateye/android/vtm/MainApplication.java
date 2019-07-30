@@ -1,6 +1,8 @@
 package com.cateye.android.vtm;
 
 import android.app.Application;
+import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 
 import com.beardedhen.androidbootstrap.TypefaceProvider;
 import com.cateye.vtm.util.SystemConstant;
@@ -26,10 +28,11 @@ import okhttp3.OkHttpClient;
  * Created by xiaoxiao on 2018/3/21.
  */
 
-public class MainApplication extends Application {
+public class MainApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        MultiDex.install(this);
 
         //加载航飞轨迹生成的so
         System.loadLibrary("geos");
@@ -41,11 +44,11 @@ public class MainApplication extends Application {
         Fragmentation.builder()
                 // 显示悬浮球 ; 其他Mode:SHAKE: 摇一摇唤出   NONE：隐藏
                 .stackViewMode(Fragmentation.NONE)
-                .debug(BuildConfig.DEBUG)
+//                .debug(BuildConfig.DEBUG)
                 .install();
 
         //Okhttp的配置
-        OkGo.getInstance().init(this);
+//        OkGo.getInstance().init(this);
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor("OkGo");
         //log打印级别，决定了log显示的详细程度

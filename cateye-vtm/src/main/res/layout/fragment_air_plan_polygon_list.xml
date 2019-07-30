@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.rey.material.widget.ImageView
+        <ImageView
             android:id="@+id/tv_air_plan_list_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
             android:padding="@dimen/button_padding_default"
             android:scaleType="fitCenter"
             android:background="@drawable/ripple_bg_drawable"
-            android:src="@drawable/icon_back_ripple" />
+            android:src="@drawable/selector_back" />
 
     </RelativeLayout>
 
